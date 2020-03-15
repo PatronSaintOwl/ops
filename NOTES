@@ -1,0 +1,49 @@
+You have machines, you want to offer services on those machines
+Ops = plateform of cloud computing, ready to deploy on those machines
+ Ultra scalable
+ Totally configurable (the objectiv is to define tasks, and logic around those tasks, triggered by events)
+ No blackbox, opensourced
+ Event based programmation with serverless functions, forcing microservice, segmentation of logic, isolation of components, and reusability
+
+ROADMAP and DEVELOPMENT AXIS :
+ - I need machines
+    - Provisioning with terraform, on cloud platform
+    - You already have your own machines
+ - I need to configure those machines
+    - Kubernetes configuration
+    - Helm template
+    - Ansible
+ - Ultra scalable server
+    - Prisma2 + Nexus + typescript ?
+    - Problem : We are going to use specific DB, so we should also look for technologies with specific integrations
+    - Go ? For the central server, i don't think it's a good idea
+ - Sharded redis :D because why not
+ - DB
+    - Scylla + elastic search ? Something else ? Some researches needs to be done
+    - Look for DB limiting concurrent accesses, efficient for cloud computing, and SCALABLE
+ - Launching of jobs
+    - Is it possible to handle events with Kubernetes nativ?
+    - Should a kind of micro server be deployed on each workers, handling the launching of tasks
+    - GO
+    - Openstack???
+ - Lifetime of a job (microservices + event based programmation + serverless functions)
+    - It HAS to be easy to bind logic with events relativ to the task lifecycle
+ - How to configure jobs (bind actions with events, add new job, add custom events / watcher, etc)
+ - How to add machines
+ - Automated deployment
+ - Every piece of work (with a ressource need, not for example the callback on events) should be launched through Ops
+    - It means a job should be abstracted as much as possible, configured with callbacks, and launched by anybody from the cluster at any time
+
+The central server (the server of the platform, not the server of OPS) should be deployed on the same cluster ?
+We need a way to easily configure the "basic cluster", to list "dependencies" (such as custom db, platform server, etc)
+
+ - Storage
+ - VPS (and focus on how would it be easy to add a custom provider like VPSs)
+ - Monitoring
+    - Hardware
+    - Components
+    - Software (tasks, progress, etc)
+ - Logging (how to signal errors ?)
+
+This project should be an ENGINE for cloud computing platform. You have machines, you want to offer some services on those machines
+Alone, the project does nothing, but it should be easily configurable to add tasks, your own logic around thoses tasks, and your own infrastructure, coexisting with ops
