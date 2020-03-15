@@ -47,3 +47,12 @@ We need a way to easily configure the "basic cluster", to list "dependencies" (s
 
 This project should be an ENGINE for cloud computing platform. You have machines, you want to offer some services on those machines
 Alone, the project does nothing, but it should be easily configurable to add tasks, your own logic around thoses tasks, and your own infrastructure, coexisting with ops
+
+ - Chaotic engineering integration (gremlins?)
+ - Resource segmentation (assigning part of your ressources for pre prod for example?)
+ - Integration tests
+
+RESSOURCES :
+ - https://www.terraform.io/intro/index.html (terraform introduction, with very clear video)
+ - Designing distributed systems (book)
+ - Kubernetes, up and running (book)
