@@ -51,6 +51,8 @@ Alone, the project does nothing, but it should be easily configurable to add tas
  - Chaotic engineering integration (gremlins?)
  - Resource segmentation (assigning part of your ressources for pre prod for example?)
  - Integration tests
+ - Using unassigned ressources for default task (crypto mining, folding to help medical researches, etc)
+ - Auto horizonal scaling, filling ressource gap with cloud providers / pre prod
 
 RESSOURCES :
  - https://www.terraform.io/intro/index.html (terraform introduction, with very clear video)
