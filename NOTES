@@ -58,3 +58,7 @@ RESSOURCES :
  - https://www.terraform.io/intro/index.html (terraform introduction, with very clear video)
  - Designing distributed systems (book)
  - Kubernetes, up and running (book)
+
+ - Provisioning (well done Provisioning strategy and kubernetes installation)
+    - https://github.com/hajowieland/terraform-kubernetes-multi-cloud
+    - https://github.com/Zenika/k8s-on-gce
