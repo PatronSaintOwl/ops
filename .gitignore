@@ -1,3 +1,6 @@
+# Credentials
+credentials.tf
+
 # Local .terraform directories
 **/.terraform/*
 
