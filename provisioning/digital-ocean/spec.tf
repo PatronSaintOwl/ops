@@ -1,7 +1,11 @@
 variable "server-count" {
   description = "Number of digital ocean servers to provision"
   type        = number
-  default     = 0
+}
+
+variable "ssh-keys" {
+  description = "SSH keys to add to your servers"
+  type        = list(number)
 }
 
 variable "token" {
