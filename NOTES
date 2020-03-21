@@ -9,6 +9,7 @@ ROADMAP and DEVELOPMENT AXIS :
  - I need machines
     - Provisioning with terraform, on cloud platform
     - You already have your own machines
+    - Provisioning CLI
  - I need to configure those machines
     - Kubernetes configuration
     - Helm template
