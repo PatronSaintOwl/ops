@@ -14,6 +14,6 @@ resource "digitalocean_droplet" "digitalocean-worker" {
   count              = var.server-count
   image              = var.ubuntu
   region             = var.do_lon1
-  size               = var.size-s-1vcpu-1gb
+  size               = var.size-s-2vcpu-4gb
   name               = "digitalocean-worker-${count.index}"
 }
