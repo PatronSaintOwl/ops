@@ -1,0 +1,3 @@
+[submodule "setup/kubespray"]
+	path = setup/kubespray
+	url = https://github.com/kubernetes-sigs/kubespray
