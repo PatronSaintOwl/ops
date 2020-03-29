@@ -8,7 +8,7 @@ then
     exit 1
 fi
 
-echo "Local pre requirements..."
+echo "Installing requirements..."
 sudo pip install -r ./kubespray/requirements.txt
 
 echo
@@ -18,3 +18,8 @@ ansible-playbook -i $inventory --become --become-user=root ./kubespray/cluster.y
 
 echo
 echo "Ops cluster setup finished !"
+
+ansible-playbook -i $inventory ./kubeconfig.playbook.yml
+config_path="$(dirname "$PWD")/my_cluster/kubeconfig"
+export KUBECONFIG=$config_path
+echo "KUBECONFIG set at $config_path"
