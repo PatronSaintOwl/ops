@@ -3,6 +3,7 @@ provider "digitalocean" {
 }
 
 resource "digitalocean_project" "Ops" {
+  count       = var.server-count == 0 ? 0 : 1
   name        = "Ops"
   description = "Ops cluster"
   purpose     = "Web Application"
@@ -12,8 +13,8 @@ resource "digitalocean_project" "Ops" {
 resource "digitalocean_droplet" "digitalocean-worker" {
   ssh_keys           = var.ssh-keys
   count              = var.server-count
-  image              = var.ubuntu
-  region             = var.do_lon1
-  size               = var.size-s-2vcpu-4gb
-  name               = "digitalocean-worker-${count.index}"
+  image              = var.os-ubuntu
+  region             = var.region
+  size               = var.size
+  name               = "${var.name}.${count.index}"
 }
