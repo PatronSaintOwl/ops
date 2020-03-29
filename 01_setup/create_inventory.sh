@@ -20,3 +20,12 @@ custom_ips="$(< $custom_ips_file)"
 tf_ips="$( < $tf_ips_file)"
 
 CONFIG_FILE=../my_cluster/inventory.yaml python3 ./kubespray/contrib/inventory_builder/inventory.py $custom_ips $tf_ips
+
+echo
+echo "Inventory created in my_cluster/inventory.yaml"
+echo "You can configure your ops cluster in :"
+echo -e "\t- my_cluster/sample/group_vars/all/all.yml"
+echo -e "\t- my_cluster/sample/group_vars/k8s-cluster/k8s-cluster.yml"
+echo "By default, everything is nicely configured"
+echo
+echo "Once you are OK, launch ./setup.sh !"
