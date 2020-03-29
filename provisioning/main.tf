@@ -16,8 +16,3 @@ module "digitalocean" {
 #   access-secret = var.scaleway-access-secret
 #   organization-id = var.scaleway-organization-id
 # }
-
-output "ip" {
-  value = module.digitalocean.ip
-  description = "The ip address of the previously create instance"
-}
