@@ -35,6 +35,8 @@ You don't need to fill everything, only cloud providers you're using !
 
 If you was simply trying things out, or more in general if you don't need your cloud infrastructure anymore, simply run `terraform destroy` to destroy your datacenter and all its dependencies
 
+Don't worry, you can re-up it at any moment !
+
 ## Configuration
 
 You can configure your datacenter in main.tf
@@ -44,6 +46,12 @@ You can configure your datacenter in main.tf
  * `name` is pretty straight-forward
 
 Possible values for regions and sizes are listed in cloud-provider/constants.tf
+
+> What if i want to configure my infrastructure at runtime ?
+
+You have already 3 servers running, but finally you need 5 ?
+
+No problem, just change server-count, `terraform apply`, and terraform will take the rest for you. It will automatically see you have already 3 servers running, and add only two. The same apply for each configuration variables. And the inventory is regenerated each time to be alway up to date !
 
 ### Contributors
 
