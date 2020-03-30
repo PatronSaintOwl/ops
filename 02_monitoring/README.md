@@ -20,7 +20,7 @@ A must have, the [Kubernetes admin dashboard](https://kubernetes.io/docs/tasks/a
 
 It comes with an admin-user service account, which token will be saved at [my_cluster/admin-user-token](https://github.com/LeChatErrant/ops/tree/master/my_cluster/admin-user-token) to let you easily login into the dashboard
 
-![Kubernetes Dashboard](../.github/dashboard.png)
+![Kubernetes Dashboard](/.github/dashboard.png)
 
 Kubernetes dashboard is exposed with a NodePort service on port 30000
 
@@ -32,7 +32,7 @@ Kubernetes dashboard is exposed with a NodePort service on port 30000
 
 It enables soom cool features, such as `kubectl top` command, HorizontalPodAutoscaler (HPA), VerticalPodAutoscaler (VPA), and allows Kubernetes dashboard to display those metrics directly
 
-![Metrics Server](../.github/metrics-server.png)
+![Metrics Server](/.github/metrics-server.png)
 
 # Traefik
 
@@ -40,8 +40,8 @@ It enables soom cool features, such as `kubectl top` command, HorizontalPodAutos
 
 It comes with a nice dashboard, allowing us to monitor incoming traffic
 
-![Traefik Services](../.github/traefik-services.png)
-![Traefik Providers](../.github/traefik-providers.png)
+![Traefik Services](/.github/traefik-services.png)
+![Traefik Providers](/.github/traefik-providers.png)
 
 Traefik is exposed with a NodePort service on port 30001
 
@@ -51,12 +51,12 @@ Traefik is exposed with a NodePort service on port 30001
 
 [Prometheus] is one of the most popular and complete monitoring system. It will dynamically discover your components, scrap and aggregate their metrics.
 
-![Prometheus Metrics](../.github/prometheus-metrics.png)
-![Prometheus Autodiscovery](../.github/prometheus-autodiscovery.png)
+![Prometheus Metrics](/.github/prometheus-metrics.png)
+![Prometheus Autodiscovery](/.github/prometheus-autodiscovery.png)
 
 Additionally, Prometheus let you define alert rules, which will fire in specific cases, and will be connected with AlerManager
 
-![Prometheus Alerts](../.github/prometheus-alerts.png)
+![Prometheus Alerts](/.github/prometheus-alerts.png)
 
 Prometheus is exposed with a NodePort service on port 30002
 
@@ -70,7 +70,7 @@ Grafana is an open source monitoring interface, the most popular when it comes t
 
 It will be your main monitoring interface. As it is totally customizable, you're here free to create your own layout, to chose what to display, and how to display it. You can try out pre-existing open-source configurations too (#ID 315 is a nice one to begin)
 
-![Grafana](../.github/grafana.png)
+![Grafana](/.github/grafana.png)
 
 Grafana is exposed with a NodePort service on port 30003
 
