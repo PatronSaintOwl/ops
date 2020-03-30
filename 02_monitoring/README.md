@@ -64,7 +64,7 @@ Prometheus is exposed with a NodePort service on port 30002
 
 # Grafana
 
-Here come the most amazing dashboard :[Grafana](https://grafana.com/) !
+Here come the most amazing dashboard : [Grafana](https://grafana.com/) !
 
 Grafana is an open source monitoring interface, the most popular when it comes to monitor metrics servers by tools like Prometheus
 
