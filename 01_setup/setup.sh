@@ -23,3 +23,5 @@ ansible-playbook -i $inventory ./kubeconfig.playbook.yml
 config_path="$(dirname "$PWD")/my_cluster/kubeconfig"
 export KUBECONFIG=$config_path
 echo "KUBECONFIG set at $config_path"
+echo
+kubectl get nodes

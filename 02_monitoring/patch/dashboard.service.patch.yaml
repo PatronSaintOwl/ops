@@ -1,0 +1,7 @@
+spec:
+  type: NodePort
+  ports:
+    - protocol: TCP
+      nodePort: 30000
+      port: 443
+      targetPort: 8443
