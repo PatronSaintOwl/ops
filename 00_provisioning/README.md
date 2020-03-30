@@ -29,7 +29,7 @@ You don't need to fill everything, only cloud providers you're using !
 
 2. `terraform apply` will show you what terraform is going to do, and accepting this plan will launch your datacenter creation. It's as simple !
 
-3. Ip addresses will be stored in my_cluster/terraform_workers_ips
+3. Ip addresses will be stored in [my_cluster/terraform_workers_ips](https://github.com/LeChatErrant/ops/tree/master/my_cluster/terraform_workers_ips)
 
 ## Down and saving
 
