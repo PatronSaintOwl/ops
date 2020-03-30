@@ -24,7 +24,9 @@ kubectl apply -f metrics-server
 kubectl apply -f traefik
 
 # Prometheus
+kubectl apply -f prometheus/prometheus.namespace.yaml
 kubectl apply -f prometheus
+kubectl apply -f kube-state-metrics-configs
 
 # Grafana
 kubectl apply -f grafana
@@ -40,3 +42,6 @@ echo -e "\t---"
 echo "Prometheus dashboard available on port 30002 of any node (Example : http://$firstNodeIp:30002)"
 echo -e "\t---"
 echo "Grafana dashboard available on port 30003 of any node (Example : http://$firstNodeIp:30003)"
+echo " User : admin"
+echo " Password : admin"
+echo " Try out dashboards 315 !"

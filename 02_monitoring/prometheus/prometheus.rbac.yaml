@@ -19,13 +19,6 @@ rules:
 - nonResourceURLs: ["/metrics"]
   verbs: ["get"]
 ---
-  kind: Namespace
-  apiVersion: v1
-  metadata:
-    name: monitoring
-    labels:
-      name: monitoring
----
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
 metadata:
