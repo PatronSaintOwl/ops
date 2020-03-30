@@ -29,20 +29,20 @@ Before setting your cluster up, you need to create your ansible inventory
 
 You have two way of providing servers :
 
-> Cloud providers
+> #### Cloud providers
+>
+> Use [00_provisioning](https://github.com/LeChatErrant/ops/tree/master/00_provisioning)
+>
+> It will fill [my_cluster/terraform_workers_ips](https://github.com/LeChatErrant/ops/tree/master/my_cluster/terraform_workers_ips)
 
-Use [00_provisioning](https://github.com/LeChatErrant/ops/tree/master/00_provisioning)
-
-It will fill [my_cluster/terraform_workers_ips](https://github.com/LeChatErrant/ops/tree/master/my_cluster/terraform_workers_ips)
-
-> Custom servers
-
-Already have your own servers running ?
-
-Add them to [my_cluster/custom_workers_ips](https://github.com/LeChatErrant/ops/tree/master/my_cluster/custom_workers_ips) with the following format :
-```
-my_worker_1,0.0.0.0 my_worker_2,0.0.0.1 my_worker_3,0.0.0.2
-```
+> #### Custom servers
+>
+> Already have your own servers running ?
+>
+> Add them to [my_cluster/custom_workers_ips](https://github.com/LeChatErrant/ops/tree/master/my_cluster/custom_workers_ips) with the following format :
+> ```
+> my_worker_1,0.0.0.0 my_worker_2,0.0.0.1 my_worker_3,0.0.0.2
+> ```
 
 You can use both cloud providers and custom servers at the same time
 
