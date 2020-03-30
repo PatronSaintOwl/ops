@@ -26,6 +26,9 @@ kubectl apply -f traefik
 # Prometheus
 kubectl apply -f prometheus
 
+# Grafana
+kubectl apply -f grafana
+
 firstNodeIp=$(kubectl get nodes -o jsonpath='{ $.items[0].status.addresses[?(@.type=="InternalIP")].address }')
 echo
 echo "Admin-user created ! Token stored in my_cluster/admin-user-token"
@@ -35,3 +38,5 @@ echo -e "\t---"
 echo "Traefik dashboard available on port 30001 of any node (Example : http://$firstNodeIp:30001)"
 echo -e "\t---"
 echo "Prometheus dashboard available on port 30002 of any node (Example : http://$firstNodeIp:30002)"
+echo -e "\t---"
+echo "Grafana dashboard available on port 30003 of any node (Example : http://$firstNodeIp:30003)"
