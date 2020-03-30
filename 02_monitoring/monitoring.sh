@@ -8,8 +8,6 @@ then
     exit 1
 fi
 
-git submodule update --init --recursive --remote
-
 export KUBECONFIG=$config_path
 echo "KUBECONFIG set at $config_path"
 echo
@@ -20,7 +18,7 @@ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboar
 kubectl patch service kubernetes-dashboard -p "$(cat ./patch/dashboard.service.patch.yaml)" -n kubernetes-dashboard
 
 # Metrics server
-kubectl apply -f metrics-server/deploy/kubernetes/
+kubectl apply -f metrics-server
 
 echo
 echo "Admin-user created ! Token stored in my_cluster/admin-user-token"
