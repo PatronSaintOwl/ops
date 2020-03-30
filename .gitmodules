@@ -4,6 +4,3 @@
 [submodule "01_setup/kubespray"]
 	path = 01_setup/kubespray
 	url = https://github.com/kubernetes-sigs/kubespray
-[submodule "02_monitoring/metrics-server"]
-	path = 02_monitoring/metrics-server
-	url = https://github.com/kubernetes-sigs/metrics-server
