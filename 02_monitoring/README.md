@@ -8,6 +8,12 @@ Finding the right configuration to install monitoring tools in your cluster can 
 
 Here, you will install multiple monitoring tools in your cluster, along with their services to reach their interface. Happy monitoring !
 
+## Installation
+
+Simply run `./monitoring.sh` !
+
+Check out the list of what will be installed in your cluster and how to access it below
+
 # Kubernetes Dashboard
 
 A must have, the [Kubernetes admin dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) ! This web UI allow you to manage your cluster and monitor every activities of your baby.
