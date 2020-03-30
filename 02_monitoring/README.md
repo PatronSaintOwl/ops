@@ -4,7 +4,7 @@
 
 You now have a running cluster, let's start customizing it.
 
-Finding the right configuration to install monitoring tools in your cluster can be really though. Do you have any idea of how many versions of metrics-server I tried to install before having my CPU load displayed onto my dashboard ? You don't want
+Finding the right configuration to install monitoring tools in your cluster can be really tough. Do you have any idea of how many versions of metrics-server I tried to install before having my CPU load displayed onto my dashboard ? You don't want to
 
 Here, you will install multiple monitoring tools in your cluster, along with their services to reach their interface. Happy monitoring !
 
