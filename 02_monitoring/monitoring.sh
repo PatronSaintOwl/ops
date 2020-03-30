@@ -23,12 +23,15 @@ kubectl apply -f metrics-server
 # Traefik
 kubectl apply -f traefik
 
+# Prometheus
+kubectl apply -f prometheus
+
+firstNodeIp=$(kubectl get nodes -o jsonpath='{ $.items[0].status.addresses[?(@.type=="InternalIP")].address }')
 echo
 echo "Admin-user created ! Token stored in my_cluster/admin-user-token"
 echo -e "\t---"
-echo "Kubernetes dashboard available on port 30000 of any node (use your admin-token to login)"
-firstNodeIp=$(kubectl get nodes -o jsonpath='{ $.items[0].status.addresses[?(@.type=="InternalIP")].address }')
-echo "Example : https://$firstNodeIp:30000"
+echo "Kubernetes dashboard available on port 30000 of any node (use your admin-token to login) (Example : https://$firstNodeIp:30000)"
 echo -e "\t---"
-echo "Traefik dashboard available on port 30001 of any node"
-echo "Example : http://$firstNodeIp:30001"
+echo "Traefik dashboard available on port 30001 of any node (Example : http://$firstNodeIp:30001)"
+echo -e "\t---"
+echo "Prometheus dashboard available on port 30002 of any node (Example : http://$firstNodeIp:30002)"
