@@ -8,6 +8,8 @@ then
     exit 1
 fi
 
+git submodule update --init --remote --recursive
+
 export KUBECONFIG=$config_path
 echo "KUBECONFIG set at $config_path"
 echo
