@@ -15,7 +15,8 @@ echo "KUBECONFIG set at $config_path"
 echo
 
 # Dashboard
-kubectl apply -f dashboard -R
+kubectl apply -f dashboard/dashboard.namespace.yaml
+kubectl apply -f dashboard
 kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}') > ../my_cluster/admin-user-token
 kubectl patch service kubernetes-dashboard -p "$(cat ./patch/dashboard.service.patch.yaml)" -n kubernetes-dashboard
 
