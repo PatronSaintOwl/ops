@@ -19,7 +19,7 @@ Kubespray is perfect to setup a cluster from bare-metal, more likely to works an
  * Production ready
  * Healthy and compliant with Kubernetes good practices
 
-Kubernetes cluster, and is supported by Kubernetes itself (have a look [here](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/) !)
+Kubernetes cluster, and is supported by Kubernetes itself in their [documentation](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/)
 
 If it does all the works, does it good, and is well maintained, why not picking it up ?
 
@@ -33,7 +33,7 @@ You have two way of providing servers :
 >
 > Use [00_provisioning](https://github.com/LeChatErrant/ops/tree/master/00_provisioning)
 >
-> It will fill [my_cluster/terraform_workers_ips](https://github.com/LeChatErrant/ops/tree/master/my_cluster/terraform_workers_ips)
+> It will fill [my_cluster/terraform_workers_ips](https://github.com/LeChatErrant/ops/tree/master/my_cluster/terraform_workers_ips) with your freshly created servers
 
 > #### Custom servers
 >
@@ -44,7 +44,7 @@ You have two way of providing servers :
 > my_worker_1,0.0.0.0 my_worker_2,0.0.0.1 my_worker_3,0.0.0.2
 > ```
 
-You can use both cloud providers and custom servers at the same time
+Of course, you can use both cloud providers and custom servers at the same time
 
 Once you're ready, simply run `./create_inventory.sh` to created your inventory in my_cluster/hosts.yaml (note you will need python3 to be installed)
 
@@ -64,7 +64,7 @@ Your inventory is ready ? Let's finish this ! Run `./setup.sh`
 
 It will install requirements (note you will need pip to be installed, and sudo privilege) and launch kubespray
 
-Note that it may take time (~10min) to finish to setup the whole cluster. It's also a good things to have already connected to your servers with ssh, to have their fingerprints listed in your know_hosts
+Note that it may takes time (~10min) to finish to setup the whole cluster. It's also a good things to have already connected to your servers with ssh, to have their fingerprints listed in your know_hosts (or it will result with an Ansible error in most cases)
 
 Once the setup is finished, the kubeconfig will be available in my_cluster/kubeconfig, and you can begin to play with your cluster with `kubectl`
 
