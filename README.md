@@ -1,13 +1,15 @@
 # Ops
 
-___
-
 > The generic distributed Cloud-computing platform
+
+
 
 ## Why Ops?
 
 > First of all, hello. I'm [LeChatErrant](https://github.com/LeChatErrant) a young software engineer studying at Epitech Paris, creator and maintainer of [Ops](https://github.com/LeChatErrant/ops)
+>
 > I'm currently working at [Tresorio](https://tresorio.com/), a green cloud-computing startup, at the position of lead-developer of their cloud-rendering branch (distributed computing for 3D animation)
+>
 > Passionated by the design of distributed systems and their challenges, I'm aiming to offer tools to help building a complete cloud-computing platform, whatever your usecase is
 
 Let's say you have machines. A bunch of machines. And you want to sell some services on it : *AI trainings*, *video processing*, or any *resource consuming task*
@@ -23,6 +25,8 @@ Perhaps you don't have machines, but you have found a whole new *usecase of dist
 1. The time/money consuming one. Hire developers. Build your platform from scratch, make errors that other have already made, refactor your infrastructure as many times as your usecase changes, maintain it and face scaling problems, requiring more experienced developers (and more refactor, and more time, and more money). It's an adventure, but I swear it's a good one!
 2. Use **Ops**. Focus only on what you offer on your machines, not on how!
 
+
+
 ## What is Ops?
 
 Ops is an open-source cloud-computing platform
@@ -32,9 +36,9 @@ It aims to respond to only one challenge : you have *machines* and you want to o
 Ops purpose is to unify all your machines into a single infrastructure and to provide a core API to launch the tasks that **YOU** define. It can be seen as an engine responsible of the cloud-computing logic, where the only thing you have to code are the tasks you want to propose and the logic around it
 
 Ops is composed of multiples *parts*. Each parts purpose aims to be used **separatly**
-> e.g. You are not interested at all in the Ops project, but need monitoring to be installed in your Kubernetes cluster? Take a look at [02_monitoring](/02_monitoring)
+> e.g. You are not interested at all in the Ops project, but need monitoring to be installed in your Kubernetes cluster? You can use [02_monitoring](/02_monitoring), regardless of the rest of the project
 
-The project provide
+The project provides
  * Servers provisionning from multi cloud providers
  * A way to setup an healthy minimal kubernetes cluster and to maintain it
  * Various Monitoring tools
@@ -49,9 +53,11 @@ The project provide
  * Chaotic engineering integration
  * Automated unused resources management (for example, let your unused GPUs be used by [folding@home](https://foldingathome.org/))
  * Environment segmentation (e.g. to allocate a part of your infrastructure for staging)
- * More to come !
+ * *And there is more to come !*
 
-## Ops main-lines
+
+
+## Ops guidelines
 
  - **Open-sourcing** Ops code should be totally transparent and contributions from all developpers should always be welcome
  - **Simplicity** Ops should be simple to apprehend, deploy, maintain and substitute
@@ -64,8 +70,12 @@ The project provide
 
 Those guidelines aim to keep Ops **production ready**
 
+
+
 ## Ops design and topology
 > Coming soon
+
+
 
 ## Contributions
 
@@ -80,6 +90,8 @@ To contribute:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+
 
 ### Contributors
 
