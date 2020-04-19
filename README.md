@@ -8,7 +8,7 @@
 
 > First of all, hello. I'm [LeChatErrant](https://github.com/LeChatErrant) a young software engineer studying at Epitech Paris, creator and maintainer of [Ops](https://github.com/LeChatErrant/ops)
 >
-> I'm currently working at [Tresorio](https://tresorio.com/), a green cloud-computing startup, at the position of lead-developer of their cloud-rendering branch (distributed computing for 3D animation)
+> I'm currently working at [Tresorio](https://tresorio.com/), a green cloud-computing startup, at the position of lead-developer of the cloud-rendering branch (distributed computing for 3D animation)
 >
 > Passionated by the design of distributed systems and their challenges, I'm aiming to offer tools to help building a complete cloud-computing platform, whatever your usecase is
 
@@ -81,7 +81,7 @@ Those guidelines aim to keep Ops **production ready**
 
 All contributions are welcome!
 
-This is a huge project, and the knowledge of everyone is needed ;) Even if it's just to send tips or discuss about the general architecture, don't hesitate to post issues!
+This is a huge project, and the knowledge of everyone is needed. Even if it's just to send tips or discuss about the general architecture, don't hesitate to post issues!
 
 
 To contribute:
