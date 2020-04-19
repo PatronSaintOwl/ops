@@ -16,7 +16,7 @@ Check out the list of what will be installed in your cluster and how to access i
 
 # Kubernetes Dashboard
 
-A must have, the [Kubernetes admin dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) ! This web UI allow you to manage your cluster and monitor every activities of your baby.
+A must have, the [Kubernetes admin dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) ! This web UI allows you to manage your cluster and monitor every activities of your baby.
 
 It comes with an admin-user service account, which token will be saved at [my_cluster/admin-user-token](https://github.com/LeChatErrant/ops/tree/master/my_cluster/admin-user-token) to let you easily login into the dashboard
 
@@ -54,7 +54,7 @@ Traefik is exposed with a NodePort service on port 30001
 ![Prometheus Metrics](/.github/prometheus-metrics.png)
 ![Prometheus Autodiscovery](/.github/prometheus-autodiscovery.png)
 
-Additionally, Prometheus let you define alert rules, which will fire in specific cases, and will be connected with AlerManager
+Additionally, Prometheus lets you define alert rules, which will fire in specific cases, and will be connected with AlertManager
 
 ![Prometheus Alerts](/.github/prometheus-alerts.png)
 
