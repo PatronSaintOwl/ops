@@ -16,7 +16,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-      - name: worker-container
+      - name: core
         image: lechaterrant/ops:latest
         envFrom:
         - configMapRef:
