@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: twemconfig
+  namespace: ops
+data:
+  twemproxy.yaml: |
+    redis:
+      listen: 0.0.0.0:6379
+      hash: fnv1a_64
+      distribution: ketama
+      auto_eject_hosts: true
+      server_retry_timeout: 30000
+      server_failure_limit: 3
+      timeout: 500
+      redis: true
+      servers:
+        - sharded-redis-0.redis-service:6379:1
+        - sharded-redis-1.redis-service:6379:1
+        - sharded-redis-2.redis-service:6379:1
