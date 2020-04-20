@@ -1,0 +1,16 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: core-ingress
+  namespace: ops
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  -  http:
+      paths:
+      - path: /core
+        backend:
+          serviceName: core-service
+          servicePort: http

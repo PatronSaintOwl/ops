@@ -5,12 +5,11 @@ metadata:
   name: core-service
   namespace: ops
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: core
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 8000
       targetPort: 8000
-      nodePort: 32767
-
