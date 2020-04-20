@@ -1,5 +1,6 @@
 FROM node:lts-alpine
 
+RUN chown node:node /app
 COPY . /app
 WORKDIR /app
 
