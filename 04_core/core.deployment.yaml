@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: core-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: core
+  template:
+    metadata:
+      labels:
+        app: core
+    spec:
+      restartPolicy: Always
+      containers:
+      - name: worker-container
+        image: lechaterrant/ops:latest
+        envFrom:
+        - configMapRef:
+            name: core-configmap
