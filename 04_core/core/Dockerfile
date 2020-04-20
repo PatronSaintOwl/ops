@@ -1,6 +1,7 @@
 FROM node:lts-alpine
 
 RUN mkdir /app && chown node:node /app
+
 COPY . /app
 WORKDIR /app
 
