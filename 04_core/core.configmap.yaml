@@ -1,0 +1,9 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: core-configmap
+data:
+  SESSION_SECRET: keyboard_cat
+  PORT: "8000"
+  MODE: "dev"
