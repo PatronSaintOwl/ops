@@ -32,9 +32,9 @@ Bonus : Traefik comes with a nice dashboard, allowing us to monitor incoming tra
 ![Traefik Services](/.github/traefik-services.png)
 ![Traefik Providers](/.github/traefik-providers.png)
 
-Traefik is exposed with a NodePort service on port 30001
+Traefik dashboard is exposed with a NodePort service on port 30080
 
-> Access it with http://ANYNODEIP:30001
+> Access it with http://ANYNODEIP:30080
 
 ### Contributors
 
