@@ -1,6 +1,6 @@
 [submodule "01_setup/kubespray"]
 	path = 01_setup/kubespray
 	url = https://github.com/kubernetes-sigs/kubespray
-[submodule "02_monitoring/kube-state-metrics-configs"]
-	path = 02_monitoring/kube-state-metrics-configs
+[submodule "03_monitoring/kube-state-metrics-configs"]
+	path = 03_monitoring/kube-state-metrics-configs
 	url = https://github.com/devopscube/kube-state-metrics-configs.git
