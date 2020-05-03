@@ -36,7 +36,7 @@ It aims to respond to only one challenge : you have *machines* and you want to o
 Ops purpose is to unify all your machines into a single infrastructure and to provide a core API to launch the tasks that **YOU** define. It can be seen as an engine responsible of the cloud-computing logic, where the only thing you have to code are the tasks you want to propose and the logic around it
 
 Ops is composed of multiples *parts*. Each parts purpose aims to be used **separatly**
-> e.g. You are not interested at all in the Ops project, but need monitoring to be installed in your Kubernetes cluster? You can use [02_monitoring](/02_monitoring), regardless of the rest of the project
+> e.g. You are not interested at all in the Ops project, but need monitoring to be installed in your Kubernetes cluster? You can use [03_monitoring](/03_monitoring), regardless of the rest of the project
 
 The project provides
  * Servers provisionning from multi cloud providers
