@@ -10,7 +10,7 @@ Here, you will install multiple monitoring tools in your cluster, along with the
 
 ## Installation
 
-Simply run `./monitoring.sh` !
+Simply run `./deploy.sh` !
 
 Check out the list of what will be installed in your cluster and how to access it below
 

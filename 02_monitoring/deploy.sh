@@ -14,8 +14,11 @@ export KUBECONFIG=$config_path
 echo "KUBECONFIG set at $config_path"
 echo
 
+# Namespaces
+kubectl apply -f dashboard.namespace.yaml
+kubectl apply -f monitoring.namespace.yaml
+
 # Dashboard
-kubectl apply -f dashboard/dashboard.namespace.yaml
 kubectl apply -f dashboard
 kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}') > ../my_cluster/admin-user-token
 kubectl patch service kubernetes-dashboard -p "$(cat ./patch/dashboard.service.patch.yaml)" -n kubernetes-dashboard
@@ -27,7 +30,6 @@ kubectl apply -f metrics-server
 kubectl apply -f traefik
 
 # Prometheus
-kubectl apply -f prometheus/prometheus.namespace.yaml
 kubectl apply -f prometheus
 kubectl apply -f kube-state-metrics-configs
 
