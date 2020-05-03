@@ -36,7 +36,7 @@ It enables soom cool features, such as `kubectl top` command, HorizontalPodAutos
 
 # Prometheus
 
-[Prometheus] is one of the most popular and complete monitoring system. It will dynamically discover your components, scrap and aggregate their metrics.
+[Prometheus](https://prometheus.io/) is one of the most popular and complete monitoring system. It will dynamically discover your components, scrap and aggregate their metrics.
 
 ![Prometheus Metrics](/.github/prometheus-metrics.png)
 ![Prometheus Autodiscovery](/.github/prometheus-autodiscovery.png)
