@@ -14,7 +14,7 @@ echo
 
 # Core
 kubectl apply -f ops.namespace.yaml
-kubectl apply -f .
+kubectl apply -f redis -f twemproxy
 
 echo ""
 echo "Sharded redis deployed!"
