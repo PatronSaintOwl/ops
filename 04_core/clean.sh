@@ -13,7 +13,7 @@ echo "KUBECONFIG set at $config_path"
 echo
 
 # Core
-kubectl delete -f core.configmap.yaml -f core.deployment.yaml -f core.ingress.yaml -f core.service.yaml
+kubectl delete -f core-deploy
 
 echo ""
 echo "Ops core removed!"
