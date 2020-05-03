@@ -2,18 +2,18 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: sharded-redis
+  name: sharded-redis-statefulset
   namespace: ops
 spec:
-  serviceName: redis-service
+  serviceName: sharded-redis-service
   replicas: 3
   selector:
     matchLabels:
-      app: redis
+      app: sharded-redis
   template:
     metadata:
       labels:
-        app: redis
+        app: sharded-redis
     spec:
       terminationGracePeriodSeconds: 10
       containers:

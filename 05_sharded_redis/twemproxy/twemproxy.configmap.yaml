@@ -15,6 +15,6 @@ data:
       timeout: 500
       redis: true
       servers:
-        - sharded-redis-0.redis-service:6379:1
-        - sharded-redis-1.redis-service:6379:1
-        - sharded-redis-2.redis-service:6379:1
+        - sharded-redis-statefulset-0.sharded-redis-service:6379:1
+        - sharded-redis-statefulset-1.sharded-redis-service:6379:1
+        - sharded-redis-statefulset-2.sharded-redis-service:6379:1

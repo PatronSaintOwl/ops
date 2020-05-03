@@ -9,6 +9,6 @@ data:
   PORT: "8000"
   MODE: dev
   DB_URL: postgresql://root:dbpass@db-service:5432/core
-  REDIS_HOST: twemproxy-service
+  REDIS_HOST: redis-service
   REDIS_PORT: "6379"
   REDIS_PASS: redispass
