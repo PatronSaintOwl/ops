@@ -18,9 +18,6 @@ kubectl delete -f dashboard
 # Metrics server
 kubectl delete -f metrics-server
 
-# Traefik
-kubectl delete -f traefik
-
 # Prometheus
 kubectl delete -f kube-state-metrics-configs
 kubectl delete -f prometheus

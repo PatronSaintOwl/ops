@@ -22,9 +22,9 @@ It comes with an admin-user service account, which token will be saved at [my_cl
 
 ![Kubernetes Dashboard](/.github/dashboard.png)
 
-Kubernetes dashboard is exposed with a NodePort service on port 30000
+Kubernetes dashboard is exposed with a NodePort service on port 30001
 
-> Access it with https://ANYNODEIP:30000
+> Access it with https://ANYNODEIP:30001
 
 # Metrics Server
 
@@ -33,19 +33,6 @@ Kubernetes dashboard is exposed with a NodePort service on port 30000
 It enables soom cool features, such as `kubectl top` command, HorizontalPodAutoscaler (HPA), VerticalPodAutoscaler (VPA), and allows Kubernetes dashboard to display those metrics directly
 
 ![Metrics Server](/.github/metrics-server.png)
-
-# Traefik
-
-[Traefik](https://containo.us/traefik/) will be used as *ingress controller* in our cluster. Its purpose will be to load balance external traffic and to expose internal services to the world
-
-It comes with a nice dashboard, allowing us to monitor incoming traffic
-
-![Traefik Services](/.github/traefik-services.png)
-![Traefik Providers](/.github/traefik-providers.png)
-
-Traefik is exposed with a NodePort service on port 30001
-
-> Access it with http://ANYNODEIP:30001
 
 # Prometheus
 
