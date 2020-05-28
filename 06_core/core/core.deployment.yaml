@@ -17,7 +17,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: core
-        image: lechaterrant/ops:latest
+        image: lechaterrant/ops-core:latest
         envFrom:
         - configMapRef:
             name: core-configmap
