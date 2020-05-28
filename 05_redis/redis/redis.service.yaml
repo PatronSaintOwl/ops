@@ -5,7 +5,7 @@ metadata:
   name: redis-service
   namespace: ops
 spec:
-  clusterIP: None
+  type: ClusterIP
   selector:
     app: redis
   ports:
