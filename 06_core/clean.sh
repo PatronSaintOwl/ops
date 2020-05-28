@@ -13,7 +13,7 @@ echo "KUBECONFIG set at $config_path"
 echo
 
 # Core
-kubectl delete -f core-deploy
+kubectl delete -f core
 
 echo ""
 echo "Ops core removed!"

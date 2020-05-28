@@ -14,7 +14,7 @@ echo
 
 # Core
 kubectl apply -f ops.namespace.yaml
-kubectl apply -f core-deploy
+kubectl apply -f core
 
 echo ""
 echo "Ops core deployed!"
