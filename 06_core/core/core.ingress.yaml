@@ -1,17 +1,28 @@
 ---
-apiVersion: extensions/v1beta1
-kind: Ingress
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: strip-core-prefix
+  namespace: ops
+spec:
+  stripPrefix:
+    prefixes:
+      - /core
+
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
 metadata:
   name: core-ingress
   namespace: ops
-  annotations:
-    kubernetes.io/ingress.class: traefik
-    traefik.frontend.rule.type: PathPrefixStrip
 spec:
-  rules:
-  -  http:
-      paths:
-      - path: /core
-        backend:
-          serviceName: core-service
-          servicePort: http
+  entryPoints:
+    - web
+  routes:
+  - kind: Rule
+    match: PathPrefix(`/core`)
+    services:
+    - name: core-service
+      port: 8000
+    middlewares:
+      - name: strip-core-prefix
